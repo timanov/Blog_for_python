@@ -1,0 +1,9 @@
+apt update
+
+pip3 install flask
+
+git clone https://github.com/timanov/Blog_for_python.git
+
+cd Blog_for_python
+export FLASK_APP=app
+flask run
