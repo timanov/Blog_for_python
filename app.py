@@ -45,7 +45,6 @@ def create():
             (title, content))
         conn.commit()
         conn.close()
-        flash('Пост "{}" успешно удален!'.format(post['title']))
         flash('Пост успешно создан!')
         return redirect(url_for('index'))
     return render_template('create.html')
